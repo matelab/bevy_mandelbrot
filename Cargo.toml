@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 bevy = "0.7"
 #bevy_clicking = { path = "../clicking" }
-bevy_clicking = { git = "https://github.com/matelab/bevy_clicking" }
+bevy_clicking = { git = "https://github.com/matelab/bevy_clicking", branch = "main" }
