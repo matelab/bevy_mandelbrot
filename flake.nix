@@ -51,5 +51,6 @@
             cp -a assets $out/share/bevy_mandelbrot'';
         };
       };
+      defaultPackage.${system} = self.packages.${system}.bevy_mandelbrot;
     };
 }
