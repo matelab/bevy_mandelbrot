@@ -52,5 +52,8 @@
         };
       };
       defaultPackage.${system} = self.packages.${system}.bevy_mandelbrot;
+
+      hydraJobs = builtins.mapAttrs (_: drv: { "${system}" = nixpkgs.lib.hydraJob drv; })
+        self.packages.${system};
     };
 }
